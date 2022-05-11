@@ -4,3 +4,4 @@ RUN wget https://languagetool.org/download/LanguageTool-$VERSION.zip && unzip La
 WORKDIR /LanguageTool-$VERSION
 COPY languagetool.sh /
 CMD ["/languagetool.sh"]
+EXPOSE 8080
